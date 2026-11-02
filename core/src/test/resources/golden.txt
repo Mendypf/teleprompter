@@ -1,0 +1,814 @@
+# Made by core/tools/make-golden.js from core/tools/reference-matcher.js. Do not edit by hand.
+# near/far: the reference distances. words: a text, then the reference spoken words for it.
+# script: a script; keys: its spoken words. case: start position, heard text, the reference spoken words for it,
+# where the reference lands. end: how many case and words lines there are.
+near	12
+far	60
+words	Hello, world!	hello world
+words	10% of AI's users	ten percent of ais users
+words	it's 1.5 GB	its one five gb
+words	It’s	its
+words	don’t	dont
+words	I've	ive
+words	‘tis	tis
+words	rock'n'roll	rocknroll
+words	’90s	90s
+words	90's	ninetys
+words	100	100
+words	007	007
+words	07	seven
+words	0	zero
+words	00	zero
+words	5	five
+words	21	twenty one
+words	20	twenty
+words	99	ninety nine
+words	100%	100 percent
+words	5%	five percent
+words	%5	percent5
+words	50%off	fifty percentoff
+words	5%%	five percent percent
+words	1'2	onetwo
+words	1’2	onetwo
+words	a1	a1
+words	1a	1a
+words	_5	5
+words	5_	5
+words	x 7 y	x seven y
+words	7.	seven
+words	(12)	twelve
+words	#1	one
+words	$5	five
+words	5:30	five thirty
+words	1,000	one 000
+words	2026	2026
+words	3rd	3rd
+words	1st place	1st place
+words	e-mail	e mail
+words	A-B	a b
+words	—	
+words	...	
+words		
+words	   	
+words	 nbsp word	nbsp word
+words	ÉCOLE 12	cole twelve
+words	naïve 5	na ve five
+words	straße	stra e
+words	İstanbul	i stanbul
+words	ΣΑΣ 4	four
+words	٣	
+words	１２	
+words	Ⅻ	
+words	K9	k9
+words	über9	ber9
+words	9über	nine ber
+words	café's	caf s
+words	WHAT'S UP	whats up
+words	twenty-one	twenty one
+words	21st	21st
+words	1.5.2	one five two
+words	3/4	three four
+words	50/50	fifty fifty
+words	4x4	4x4
+words	covid-19	covid nineteen
+words	B2B	b2b
+words	R2-D2	r2 d2
+words	mp3	mp3
+words	a.m.	a m
+words	U.S.A.	u s a
+words	e.g.	e g
+words	it''s	its
+words	''	
+words	’’	
+words	%	percent
+words	%%	percent percent
+words	5 %	five percent
+words	1 2 3	one two three
+words	um, uh... so	um uh so
+words	2İc7.‘3 Kb/4	2i c7 three kb four
+words	7’ß	seven
+words	'4CX5	4cx5
+words	aZ10 ’	az10
+words	0a.z	0a z
+words	—16AA	16aa
+words	İY.63’”ß'%5	i y sixty three percent5
+words	KbCß1a	kbc 1a
+words	_27Zc	27zc
+words	Y 2BA	y 2ba
+words	3ß”	three
+words	zİA%“	zi a percent
+words	 é3”:/y-1Z	three y 1z
+words	c3aé—:%‘ZX'	c3a percent zx
+words	'3“	three
+words	-”5515İy%Z_İ	5515i y percentz i
+words	é'	
+words	6X“9Xİc8ß5%”_C	6x 9xi c8 five percent c
+words	4c——“/’4	4c four
+words	aZ9	az9
+words	é%—y’0x.cy4	percent y0x cy4
+words	Y-_7'”%C8Az7A	y 7 percentc8az7a
+words	  é	
+words	--'yaİ	yai
+words	KZ4zc3_0’	kz4zc3 0
+words	c 	c
+words	a.A‘x9BAKZz	a a x9bakzz
+words	İ%K%ß/é'%C%.Y	i percentk percent percentc percent y
+words	7	seven
+words	,2”é ’”c “’	two c
+words	A,X,76'AC’	a x seventy sixac
+words	4y“xB%9“	4y xb percent9
+words	Z 8”:1“2	z eight one two
+words	'——xc/5é ‘	xc five
+words	2ax’0'‘.9A	2axzero 9a
+words	29a“8K5'y	29a 8k5y
+words	C2:A‘c8X 2b	c2 a c8x 2b
+words	_3x.Xé:c‘“5	3x x c five
+words	1B.“Y—%5	1b y percent5
+words	Zß B	z b
+words	Y/Cx	y cx
+words	4y.7“-,b5A	4y seven b5a
+words	XZ	xz
+words	C8y/Bé	c8y b
+words	İ4z.Z	i 4z z
+words	0.6: ‘	zero six
+words	B7’’xCca3c,	b7xcca3c
+words	é% _”3 %'—	percent three percent
+words	,—6_258/	6 258
+words	4-:	four
+words	%A“ '3'y	percenta threey
+words	Y4b	y4b
+words	785-	785
+words	c%Céx 	c percentc x
+words	ß0CKyß - “,é	0cky
+words	0X6c,Z/.Z	0x6c z z
+words	‘:0“éZ’ß6	zero z six
+words	/	
+words	1%5	one percent5
+words	İa.’yY’	i a yy
+words	Kb'K.3—,5/, 9	kbk three five nine
+words	2Y0C:7“,98	2y0c seven ninety eight
+words	Y 7-A YcB	y seven a ycb
+words	—ß“1B /Y.7 	1b y seven
+words	4Kx4 	4kx4
+words	x’9%bK’_/21.	xnine percentbk twenty one
+words	,64c”A	64c a
+words	”‘,. K’“	k
+words	x—yß“yz Z%z‘K	x y yz z percentz k
+words	İX% —’	i x percent
+words	:İx22éZy	i x22 zy
+words	,z%	z percent
+words	6ß490c“	six 490c
+words	Kx7c 34Aİ7‘	kx7c 34ai seven
+words	Cx	cx
+words	.ßc%''.b__	c percent b
+words	39/089—3%'024‘	thirty nine 089 three percent024
+words	5 'İa.9	five i a nine
+words	KXé04	kx four
+words	6'’Yay8é95	sixyay8 ninety five
+words	  	
+words	,xZ276C0 	xz276c0
+words	_8K71Zé1“	8k71z one
+words	””	
+words	1y,c%B“y9-'	1y c percentb y9
+words	57C.9	57c nine
+words	C	c
+words	b4:67X5.Cbé	b4 67x5 cb
+words	_y5	y5
+words	cA3“B-c95/5%	ca3 b c95 five percent
+words	z %:b/K3‘:Ca:”	z percent b k3 ca
+words	‘y”‘a	y a
+words	xX7’8bA	xx78ba
+words	x%35a ,.”	x percent35a
+words	311X “',_	311x
+words	.4%z	four percentz
+words	x9cé.”—3_	x9c 3
+words	/Z47ß/İZ'x2—_	z47 i zx2
+words	9x	9x
+words	ßbC%	bc percent
+words	 bA3-ßZ1A2/a	ba3 z1a2 a
+words	_a9‘_A”b'/-cK	a9 a b ck
+words	é%K017b'y83”	percentk017by83
+words	6%é0 ‘	six percent zero
+words	b'‘0	b zero
+words	”—yzz	yzz
+words	_—a_x0”Xbß.AZ2	a x0 xb az2
+words	aY”2'%	ay two percent
+words	’':A-ß’‘“	a
+words	,:	
+words	31%AY	thirty one percentay
+words	K4	k4
+words	X'X0A“y /é20	xx0a y twenty
+words	B:y-9ééZ aßXy	b y nine z a xy
+words	:	
+words	“	
+words	.z., c‘“‘5'	z c five
+words	z_zb'_::x‘	z zb x
+words	83	eighty three
+words	7—BzB’'Xy”“	seven bzbxy
+script	When people bake fresh bread, they say it feels easy because you can knead a dough in ten minutes. The trouble is, it only gets about eighty percent of the way on its own. To make the final twenty percent, you must watch each stage with care to be sure that the dough rises and the crust sets the way it is supposed to. That step usually takes five times as long as the first one. I've seen that happen more times than I can count. And if you're short on time, you might guess that a hotter oven or a longer rise will fix it. It's not. Most bakers won't say what's going wrong, but a good loaf only comes after you give the dough enough time.
+keys	when people bake fresh bread they say it feels easy because you can knead a dough in ten minutes the trouble is it only gets about eighty percent of the way on its own to make the final twenty percent you must watch each stage with care to be sure that the dough rises and the crust sets the way it is supposed to that step usually takes five times as long as the first one ive seen that happen more times than i can count and if youre short on time you might guess that a hotter oven or a longer rise will fix it its not most bakers wont say whats going wrong but a good loaf only comes after you give the dough enough time
+case	37	more? own they first might say to. will must	more own they first might say to will must	37
+case	119	only comes after you... give the dough enough time	only comes after you give the dough enough time	128
+case	123	give the dough enough time? as it	give the dough enough time as it	128
+case	67	takes uh... five	takes uh five	69
+case	0	when people? bake. fresh people bake fresh bread fresh bread they Say it feels easy? feels easy because you can because you can knead a knead a dough	when people bake fresh people bake fresh bread fresh bread they say it feels easy feels easy because you can because you can knead a knead a dough	16
+case	126	enough time... ten rise	enough time ten rise	128
+case	19	the trouble is it only: gets about 80% of the way. its own to make!	the trouble is it only gets about eighty percent of the way its own to make	36
+case	105	Um.	um	105
+case	93	more times than i. can count	more times than i can count	93
+case	126			126
+case	60	it is... supposed it is supposed to that step Usually takes 5	it is supposed it is supposed to that step usually takes five	69
+case	17	ten minutes the trouble is supposed; to	ten minutes the trouble is supposed to	64
+case	56	crust sets the way it is supposed to that? step usually That step. usually; takes five Times as long as	crust sets the way it is supposed to that step usually that step usually takes five times as long as	73
+case	90	when That comes dough	when that comes dough	90
+case	16	in minutes is it only gets about eighty percent the way, on It's, Own	in minutes is it only gets about eighty percent the way on its own	34
+case	1	people people people people bake fresh bread they they they say it feels Easy	people people people people bake fresh bread they they they say it feels easy	10
+case	83	step	step	83
+case	29	the way and! The crust sets the way	the way and the crust sets the way	60
+case	118	um	um	118
+case	34	to first one I’ve seen that happen.	to first one ive seen that happen	80
+case	15	dough	dough	16
+case	57	sets the way Is supposed to that step usually, takes 5 times as long As The first one I've seen that	sets the way is supposed to that step usually takes five times as long as the first one ive seen that	79
+case	3	fresh fresh fresh fresh bread they they say it feels easy because you Can knead knead knead knead a dough	fresh fresh fresh fresh bread they they say it feels easy because you can knead knead knead knead a dough	16
+case	125	dough enough time	dough enough time	128
+case	2	...		2
+case	128	care way	care way	128
+case	63	as bread that but not	as bread that but not	63
+case	9	 		9
+case	0	when people... bake fresh bread, they say it feels easy	when people bake fresh bread they say it feels easy	10
+case	80	more i count You’re short on	more i count youre short on	91
+case	118	loaf only comes; after you um, give the um, dough enough I mean time;	loaf only comes after you um give the um dough enough i mean time	128
+case	0	when. people Bake bake bake bake fresh bread bread bread bread they say it	when people bake bake bake bake fresh bread bread bread bread they say it	8
+case	7	it feels;	it feels	9
+case	103	w-: will f- fix It its No- not most bakers won’t, say	w will f fix it its no not most bakers wont say	112
+case	126	enough Time	enough time	128
+case	0	uh um	uh um	0
+case	29	th- the way on it- its own to make the final t-: twenty Percent	th the way on it its own to make the final t twenty percent	40
+case	69	the takes a	the takes a	69
+case	128			128
+case	0	when people bake bread feels easy! you dough in 10 minutes	when people bake bread feels easy you dough in ten minutes	19
+case	126	enough time trouble But loaf first in	enough time trouble but loaf first in	128
+case	79	happen; more times	happen more times	82
+case	11	you can knead a dough dough in 10 minutes minutes the trouble is it	you can knead a dough dough in ten minutes minutes the trouble is it	23
+case	128			128
+case	109	bakers wont say there going wrong, but a whats flesh only comes after brake give short	bakers wont say there going wrong but a whats flesh only comes after brake give short	122
+case	0	when People bake fresh bread they say it feels it feels easy it feels easy because you Can knead a can knead a dough in	when people bake fresh bread they say it feels it feels easy it feels easy because you can knead a can knead a dough in	17
+case	93	might guess after you give the dough enough time	might guess after you give the dough enough time	128
+case	63	to that step too takes	to that step too takes	66
+case	118	loaf only comes loaf only comes after You after you give you give	loaf only comes loaf only comes after you after you give you give	124
+case	43	each st-: stage with	each st stage with	46
+case	0	—		0
+case	98	bakers won’t,	bakers wont	111
+case	79	sure that the dough rises and The crust sets the way it is supposed	sure that the dough rises and the crust sets the way it is supposed	79
+case	121	after you the enough time:	after you the enough time	128
+case	102	that happen more times than i	that happen more times than i	102
+case	117	good loaf... only comes	good loaf only comes	121
+case	64	on time you might! guess that a hotter oven	on time you might guess that a hotter oven	99
+case	30	the Trouble Is must watch each with care to; be: sure: in! longer as the first: sing I've rise that enough more! bred, than own! guess i going own? to as that? that fix you... you hotter oven or a longer rise will it It's; not bakers. won't whats going wrong hotter rise seen one count a seen; what's	the trouble is must watch each with care to be sure in longer as the first sing ive rise that enough more bred than own guess i going own to as that that fix you you hotter oven or a longer rise will it its not bakers wont whats going wrong hotter rise seen one count a seen whats	115
+case	115	but a good loaf only comes after	but a good loaf only comes after	122
+case	23	as the you, that is times ive won't The can rises	as the you that is times ive wont the can rises	23
+case	60	it is it is supposed; To is supposed to that to that? step usually takes Five takes 5 times as times as long as the long as the	it is it is supposed to is supposed to that to that step usually takes five takes five times as times as long as the long as the	74
+case	123	give the dough enough time more I time easy stage happen	give the dough enough time more i time easy stage happen	128
+case	0			0
+case	19	um	um	19
+case	120	comes after you give the dough enough; time	comes after you give the dough enough time	128
+case	0	when people bake fr- fresh bread th-? They Sa- say it feels easy because you	when people bake fr fresh bread th they sa say it feels easy because you	12
+case	127			127
+case	89	that step usually takes 5 Times, as long as	that step usually takes five times as long as	89
+case	41	must watch each stage	must watch each stage	45
+case	89	short on time on time you might guess	short on time on time you might guess	95
+case	123	give the Give the dough give the dough enough time	give the give the dough give the dough enough time	128
+case	74	first one first one I’ve one; ive... seen that: happen more happen more times than i can count and. count And	first one first one ive one ive seen that happen more happen more times than i can count and count and	87
+case	63	to that	to that	65
+case	77	seen that happen more times! than i can co- count an- and short on time you might guess that a hotter a hotter oven or hotter oven or	seen that happen more times than i can co count an and short on time you might guess that a hotter a hotter oven or hotter oven or	100
+case	96	a-... a? hotter ov- oven or a- a l- longer ri- rise Will	a a hotter ov oven or a a l longer ri rise will	104
+case	80	more times than i can	more times than i can	85
+case	10	because you. can Knead a dough you know in um 10	because you can knead a dough you know in um ten	18
+case	126	It’s	its	126
+case	0	—		0
+case	0	when people bake fresh bread takes five times as long as The first	when people bake fresh bread takes five times as long as the first	5
+case	87	if Youre short on time you might guess that a hotter oven or a longer rise... will? fix It its its it’s not most bakers what's going wrong... but a good loaf Only comes after you give the dough enough	if youre short on time you might guess that a hotter oven or a longer rise will fix it its its its not most bakers whats going wrong but a good loaf only comes after you give the dough enough	127
+case	0	when people bake fresh bake fresh bread. they say it feels easy because! you can	when people bake fresh bake fresh bread they say it feels easy because you can	13
+case	128			128
+case	119	uh only comes	uh only comes	121
+case	89	way it is supposed	way it is supposed	89
+case	28	- -		28
+case	37	final 20 percent you must watch must watch each. stage with care i can count: and if rise will on time You might guess That a or a fix it its seen that happen more times than i can count and if you’re short! on time... good loaf. bakers won't say what’s going wrong But a good	final twenty percent you must watch must watch each stage with care i can count and if rise will on time you might guess that a or a fix it its seen that happen more times than i can count and if youre short on time good loaf bakers wont say whats going wrong but a good	119
+case	0	when, people bake fresh bread they say it feels because you knead c- Can knead a-, a dough i- in trouble is it. only gets about eighty percent of the way on it’s own to, make the final twenty percent own comes to time loaf count care to be sure that the... dough rises and the crust sets the way	when people bake fresh bread they say it feels because you knead c can knead a a dough i in trouble is it only gets about eighty percent of the way on its own to make the final twenty percent own comes to time loaf count care to be sure that the dough rises and the crust sets the way	60
+case	36	so the final 20 percent uh you	so the final twenty percent uh you	41
+case	122			122
+case	87	if youre short... on time you? might guess that: a hotter oven or: a longer	if youre short on time you might guess that a hotter oven or a longer	102
+case	84	can you know count and if! you're uh! short On time you that a hotter oven or a longer rise will fix it It's not most it’s not most bakers won’t most bakers wont say loaf only comes after You, er give the dough? the	can you know count and if youre uh short on time you that a hotter oven or a longer rise will fix it its not most its not most bakers wont most bakers wont say loaf only comes after you er give the dough the	126
+case	95	that	that	96
+case	16	in ten, minutes the trouble is	in ten minutes the trouble is	22
+case	126	can a to the own it's way usually	can a to the own its way usually	126
+case	118	on wrong a the you eighty eighty gets you to i! on	on wrong a the you eighty eighty gets you to i on	118
+case	50	that t- the	that t the	52
+case	101	lo- longer Rise will fix it, its n-? not most b- bakers won't say w- whats	lo longer rise will fix it its n not most b bakers wont say w whats	113
+case	71	so, long as I mean the First one I’ve seen that uh happen more times you know than i uh can that bred give the that enough time	so long as i mean the first one ive seen that uh happen more times you know than i uh can that bred give the that enough time	85
+case	12	Can, knead a do- dough i- in ten minutes the trouble is it	can knead a do dough i in ten minutes the trouble is it	23
+case	57	sets the Way it is supposed	sets the way it is supposed	63
+case	119	that A hotter oven or a longer rise: will	that a hotter oven or a longer rise will	119
+case	66	that step usually takes: five times as long as the first one ive seen that;	that step usually takes five times as long as the first one ive seen that	79
+case	88	you’re Short, on time going wrong but going wrong but A wrong but A good! loaf only comes after you give after you give the twenty supposed you time on	youre short on time going wrong but going wrong but a wrong but a good loaf only comes after you give after you give the twenty supposed you time on	125
+case	127	time	time	128
+case	46	care To;	care to	48
+case	65	step usually. takes 5 times as long as the first one ive seen that	step usually takes five times as long as the first one ive seen that	79
+case	126	a rise dough time rises the way dough... Will when long stage a trouble most	a rise dough time rises the way dough will when long stage a trouble most	126
+case	128			128
+case	126	enough time; ive	enough time ive	128
+case	128			128
+case	71	long... as- as	long as as	73
+case	128	oven or a longer rise will fix it! It's not most bakers won’t say what’s	oven or a longer rise will fix it its not most bakers wont say whats	128
+case	0	when people: bake fresh fresh... fresh bread they say say it	when people bake fresh fresh fresh bread they say say it	8
+case	128			128
+case	126	enough time	enough time	128
+case	76	ive seen That happen more times; Than i	ive seen that happen more times than i	84
+case	124	the dough enough time!	the dough enough time	128
+case	84	can count And if youre and if youre short. on time you might guess	can count and if youre and if youre short on time you might guess	95
+case	0	when people fresh bread they they say it feels Easy because you can knead. a dough in ten minutes the trouble is it only gets way count Most or after final easy because you can knead a, dough; in 10 minutes the trouble is it with. care To be Sure that The dough rises and The crust sets the way it is supposed to! that five. is that first of? its long As the care. one I've seen that happen more loaf on- only comes after	when people fresh bread they they say it feels easy because you can knead a dough in ten minutes the trouble is it only gets way count most or after final easy because you can knead a dough in ten minutes the trouble is it with care to be sure that the dough rises and the crust sets the way it is supposed to that five is that first of its long as the care one ive seen that happen more loaf on only comes after	122
+case	52	dough? rises and; the: crust sets sets the way it... is supposed to... that time you might guess uh that en- enough... time	dough rises and the crust sets sets the way it is supposed to that time you might guess uh that en enough time	96
+case	116	20 it guess a that	twenty it guess a that	117
+case	16	in ten minutes the trouble is er it only	in ten minutes the trouble is er it only	24
+case	6	say it! feels feels easy because because because because You can	say it feels feels easy because because because because you can	13
+case	4	bread they sure it feels Break Because the	bread they sure it feels break because the	9
+case	71	to fresh it guess be won’t of way happen minutes most	to fresh it guess be wont of way happen minutes most	71
+case	37	final 20 percent you must Watch each Stage watch Each stage with	final twenty percent you must watch each stage watch each stage with	46
+case	14	say! it Feels. easy because you can	say it feels easy because you can	14
+case	96	crust hotter Times fix a longer rise	crust hotter times fix a longer rise	103
+case	20	feels... easy because you can knead; a dough!	feels easy because you can knead a dough	20
+case	20	trouble? is it; Only gets one I’ve Seen that? happen more times than; i	trouble is it only gets one ive seen that happen more times than i	84
+case	24	gets about 80 percent of of... of of The way way way on its own own to make The:	gets about eighty percent of of of of the way way way on its own own to make the	37
+case	37	as long as the first,	as long as the first	75
+case	128			128
+case	3	f- fresh bread they say it	f fresh bread they say it	8
+case	109	knead seen count five only care	knead seen count five only care	109
+case	0	when people	when people	2
+case	119	on- only co- comes a- after y- you	on only co comes a after y you	123
+case	121	after you give the dough enough time to that	after you give the dough enough time to that	128
+case	57	...		57
+case	96	a hotter oven or a longer rise will fix it! It's not bread will whats is that happen. to trouble final. crust a time when only you... to with	a hotter oven or a longer rise will fix it its not bread will whats is that happen to trouble final crust a time when only you to with	108
+case	100	a longer? rise? will fix	a longer rise will fix	105
+case	25	80 percent	eighty percent	28
+case	39	the make times times... if 20 that; the I've final fix a	the make times times if twenty that the ive final fix a	52
+case	33	...		33
+case	43	each with care... to be sure the dough rises	each with care to be sure the dough rises	54
+case	1	people bake; fresh bread, they it only	people bake fresh bread they it only	6
+case	51	the dough rises and! crust sets the it to that, usually takes	the dough rises and crust sets the it to that usually takes	68
+case	127	time	time	128
+case	82	than i i i i	than i i i i	84
+case	17	Ten. um minutes	ten um minutes	19
+case	13	knead I mean a dough in um, ten minutes um the Trouble	knead i mean a dough in um ten minutes um the trouble	21
+case	105	it! its not bakers won't say what’s going wrong? but; a good comes: after you give	it its not bakers wont say whats going wrong but a good comes after you give	124
+case	50	 		50
+case	120	times twenty to gets oven going? the, the that say bake? count	times twenty to gets oven going the the that say bake count	120
+case	97	hotter oven Or a longer: rise Will	hotter oven or a longer rise will	104
+case	112	what's going wrong but a you loaf only that after you give the	whats going wrong but a you loaf only that after you give the	125
+case	99	or a longer rise will; fix it It's not most bakers wont say whats, going wrong but a good loaf usually after make. 80 can	or a longer rise will fix it its not most bakers wont say whats going wrong but a good loaf usually after make eighty can	119
+case	41	must watch watch watch, watch each stage stage with oven most bakers won’t say say Say you’re... A a bread! give of the a dough the i. i	must watch watch watch watch each stage stage with oven most bakers wont say say say youre a a bread give of the a dough the i i	46
+case	126	enough so time	enough so time	128
+case	15	dough in 10 minutes trouble it	dough in ten minutes trouble it	19
+case	128	whats Step be sets	whats step be sets	128
+case	121	after You give the dough enough time happen oven supposed oven the is	after you give the dough enough time happen oven supposed oven the is	128
+case	124	the dough enough time minutes	the dough enough time minutes	128
+case	59	way it is supposed! to that Usually takes as long as the	way it is supposed to that usually takes as long as the	74
+case	64	that step! step step step usually takes 5 5 5 five times. times as long long as times than i can count and if youre short on time you might... guess that a hotter oven or a, Final Oven only a easy so... its: not most I mean bakers wont I mean say I mean what's going wrong but a good hmm loaf... only comes uh after must way that? on each	that step step step step usually takes five five five five times times as long long as times than i can count and if youre short on time you might guess that a hotter oven or a final oven only a easy so its not most i mean bakers wont i mean say i mean whats going wrong but a good hmm loaf only comes uh after must way that on each	122
+case	0	 		0
+case	49	sure that sure that The dough that the dough rises dough rises and The crust the crust	sure that sure that the dough that the dough rises dough rises and the crust the crust	57
+case	97	hotter oven or a longer rise will it its Not most Bakers won’t say whats wrong	hotter oven or a longer rise will it its not most bakers wont say whats wrong	113
+case	8	with time Because to and a	with time because to and a	8
+case	33	with care	with care	33
+case	2	to that step	to that step	2
+case	98	say whats	say whats	98
+case	56	wrong but a	wrong but a	117
+case	108	comes after	comes after	108
+case	52	bakers wont say	bakers wont say	112
+case	17	the way	the way	17
+case	47	most bakers wont	most bakers wont	47
+case	90	rise will	rise will	90
+case	51	most bakers wont	most bakers wont	111
+case	27	final twenty	final twenty	39
+case	22	i can count	i can count	22
+case	101	say whats	say whats	113
+case	56	a good loaf	a good loaf	56
+case	19	its own	its own	19
+case	21	more times than	more times than	83
+case	7	the trouble	the trouble	7
+case	47	not most bakers	not most bakers	47
+case	68	times than	times than	68
+case	32	short on time	short on time	92
+case	104	good loaf	good loaf	104
+case	43	a longer rise	a longer rise	103
+case	45	sets the	sets the	45
+case	37	guess that a	guess that a	97
+case	41	dough rises	dough rises	54
+case	40	oven or a	oven or a	101
+case	43	rises and	rises and	55
+case	37	guess that a	guess that a	97
+case	83	that a	that a	83
+case	0	it is supposed	it is supposed	0
+script	When people bake fresh bread, they say it feels easy because you can knead a dough in ten minutes. That step usually takes five times as long as the first one. Most bakers won't say what's going wrong, but a good loaf only comes after you give the dough enough time. And if you're short on time, you might guess that a hotter oven or a longer rise will fix it. The trouble is, it only gets about eighty percent of the way on its own. I've seen that happen more times than I can count. It's not. To make the final twenty percent, you must watch each stage with care to be sure that the dough rises and the crust sets the way it is supposed to. Most bakers won't say what's going wrong, but a good loaf only comes after you give the dough enough time. And if you're short on time, you might guess that a hotter oven or a longer rise will fix it. That step usually takes five times as long as the first one. I've seen that happen more times than I can count. The trouble is, it only gets about eighty percent of the way on its own. It's not. When people bake fresh bread, they say it feels easy because you can knead a dough in ten minutes. To make the final twenty percent, you must watch each stage with care to be sure that the dough rises and the crust sets the way it is supposed to. The trouble is, it only gets about eighty percent of the way on its own. When people bake fresh bread, they say it feels easy because you can knead a dough in ten minutes. I've seen that happen more times than I can count. It's not. To make the final twenty percent, you must watch each stage with care to be sure that the dough rises and the crust sets the way it is supposed to. Most bakers won't say what's going wrong, but a good loaf only comes after you give the dough enough time. And if you're short on time, you might guess that a hotter oven or a longer rise will fix it. That step usually takes five times as long as the first one.
+keys	when people bake fresh bread they say it feels easy because you can knead a dough in ten minutes that step usually takes five times as long as the first one most bakers wont say whats going wrong but a good loaf only comes after you give the dough enough time and if youre short on time you might guess that a hotter oven or a longer rise will fix it the trouble is it only gets about eighty percent of the way on its own ive seen that happen more times than i can count its not to make the final twenty percent you must watch each stage with care to be sure that the dough rises and the crust sets the way it is supposed to most bakers wont say whats going wrong but a good loaf only comes after you give the dough enough time and if youre short on time you might guess that a hotter oven or a longer rise will fix it that step usually takes five times as long as the first one ive seen that happen more times than i can count the trouble is it only gets about eighty percent of the way on its own its not when people bake fresh bread they say it feels easy because you can knead a dough in ten minutes to make the final twenty percent you must watch each stage with care to be sure that the dough rises and the crust sets the way it is supposed to the trouble is it only gets about eighty percent of the way on its own when people bake fresh bread they say it feels easy because you can knead a dough in ten minutes ive seen that happen more times than i can count its not to make the final twenty percent you must watch each stage with care to be sure that the dough rises and the crust sets the way it is supposed to most bakers wont say whats going wrong but a good loaf only comes after you give the dough enough time and if youre short on time you might guess that a hotter oven or a longer rise will fix it that step usually takes five times as long as the first one
+case	384			384
+case	354	youre short on on on Time you	youre short on on on time you	359
+case	377	t- times as lo- long	t times as lo long	380
+case	380	as the first: uh.... One	as the first uh one	384
+case	130	bakers its say must must that; might	bakers its say must must that might	130
+case	0	when um, people I mean bake? fresh? bread they you know say: it feels hmm easy Er because you can knead you know a dough	when um people i mean bake fresh bread they you know say it feels hmm easy er because you can knead you know a dough	16
+case	321	rises and crust crust the way it is supposed to most most bakers bakers: bakers wont say say say whats going, wrong but? but! longer rise will fix what's i because and their 5 times as long as: the f- first one	rises and crust crust the way it is supposed to most most bakers bakers bakers wont say say say whats going wrong but but longer rise will fix whats i because and their five times as long as the f first one	384
+case	284	um	um	284
+case	384			384
+case	0	when; people a fresh about They say their feels easy? brake you peoples peoples too	when people a fresh about they say their feels easy brake you peoples peoples too	10
+case	384	crust dough, way the seen when fresh supposed and to;	crust dough way the seen when fresh supposed and to	384
+case	363	comes stage? dough is? first 80 say that, bake! as? final of	comes stage dough is first eighty say that bake as final of	363
+case	22	takes 5 um, times as long? like as the first er one most? bakers	takes five um times as long like as the first er one most bakers	33
+case	80	of- of; t- the way on it- its own ive seen that ha- happen more t- times	of of t the way on it its own ive seen that ha happen more t times	92
+case	272	a 20. you long The knead can	a twenty you long the knead can	272
+case	79	to make the final twenty	to make the final twenty	103
+case	31	m- most bakers wont sa- say wh- whats go-... going wrong b- but a- a good	m most bakers wont sa say wh whats go going wrong b but a a good	41
+case	261	Gets about: eighty percent of the way on its; own	gets about eighty percent of the way on its own	271
+case	379	long as The the the	long as the the the	382
+case	11	you can. knead a? dough in a minutes times step usually? takes flesh,	you can knead a dough in a minutes times step usually takes flesh	23
+case	156	as long as the	as long as the	178
+case	106	watch each Stage? with care; seen that happen more times than i can	watch each stage with care seen that happen more times than i can	111
+case	90	more times than	more times than	93
+case	362	a; hotter oven or a longer or a? longer rise will fix	a hotter oven or a longer or a longer rise will fix	371
+case	22	bake fresh bread They say it? feels easy because you can won’t say whats. Percent you must watch each stage with care to! you give the will fix won’t say Whats going wrong but a good Loaf only	bake fresh bread they say it feels easy because you can wont say whats percent you must watch each stage with care to you give the will fix wont say whats going wrong but a good loaf only	48
+case	111	to be sure! that the dough rises; and the crust sets the way it is supposed.	to be sure that the dough rises and the crust sets the way it is supposed	127
+case	384	time	time	384
+case	58	might guess that a hotter oven or;	might guess that a hotter oven or	65
+case	0	fix youre... most as you? won't a its,	fix youre most as you wont a its	0
+case	96	youre time on you time	youre time on you time	96
+case	383	the you I've stage it seen! to might takes	the you ive stage it seen to might takes	383
+case	28	the so first one So, most bakers	the so first one so most bakers	33
+case	381	that two one	that two one	381
+case	93	i too; count its not to make if brake 20 percent	i too count its not to make if brake twenty percent	104
+case	90	more times than than. than i can can count it’s; not to?	more times than than than i can can count its not to	99
+case	1	bake bread say it feels easy because... You Easy because you can because you can knead a dough in ten minutes a rise i in short! 10 it feels the you’re but a good loaf only comes after... you give the dough enough time and if youre short on time you, people You give because one sure or a: longer. rise will fix it the! trouble is... it, only.	bake bread say it feels easy because you easy because you can because you can knead a dough in ten minutes a rise i in short ten it feels the youre but a good loaf only comes after you give the dough enough time and if youre short on time you people you give because one sure or a longer rise will fix it the trouble is it only	76
+case	384	the it stage	the it stage	384
+case	79	percent: of	percent of	81
+case	0	when people bake fresh bread they	when people bake fresh bread they	6
+case	369	The to will It and: fresh give guess the if	the to will it and fresh give guess the if	370
+case	375	takes 5 times: as long as the first one bakers	takes five times as long as the first one bakers	384
+case	0	count: bread I’ve i longer give one comes one the to it	count bread ive i longer give one comes one the to it	0
+case	0	when people bake fresh bread. they say um it feels easy because so you can! knead! a dough	when people bake fresh bread they say um it feels easy because so you can knead a dough	16
+case	378	as: long as the first First one	as long as the first first one	384
+case	69	fix it the... trouble is it only only only gets about eighty percent	fix it the trouble is it only only only gets about eighty percent	80
+case	282	...		282
+case	27	as the first one! one one one most bakers	as the first one one one one most bakers	33
+case	17	in times they	in times they	17
+case	384			384
+case	220	percent of:	percent of	220
+case	374	might guess that; A hotter oven or a Longer rise will fix it that step	might guess that a hotter oven or a longer rise will fix it that step	374
+case	376	five times as long as the first one a Loaf each	five times as long as the first one a loaf each	384
+case	148	and i- if youre	and i if youre	151
+case	384	time	time	384
+case	350	enough time and um if short on time you time you that a hotter. oven a hotter oven or a	enough time and um if short on time you time you that a hotter oven a hotter oven or a	367
+case	76	gets about 80%! uh... of	gets about eighty percent uh of	81
+case	164	rise rise rise will fix fix fix it that that that step usually	rise rise rise will fix fix fix it that that that step usually	171
+case	136	a good loaf loaf loaf loaf only comes after you give give give the the the the... dough dough Enough time	a good loaf loaf loaf loaf only comes after you give give give the the the the dough dough enough time	148
+case	0	when people bake fresh...	when people bake fresh	4
+case	16	knead is watch own and it supposed	knead is watch own and it supposed	16
+case	126	supposed to most bakers; wont: say; what’s going... wrong But a loaf only you give the	supposed to most bakers wont say whats going wrong but a loaf only you give the	145
+case	381	the first one the sets	the first one the sets	384
+case	145	dough enough time and if you’re short	dough enough time and if youre short	152
+case	292	Um.	um	292
+case	252	it is supposed the trouble Is It only	it is supposed the trouble is it only	261
+case	374	usually takes five Times as long as the first one!	usually takes five times as long as the first one	384
+case	185	times than i can co- count	times than i can co count	190
+case	378	uh um	uh um	378
+case	213	say it feels easy Because	say it feels easy because	218
+case	287	i- in: t- ten mi- minutes ive se- seen	i in t ten mi minutes ive se seen	292
+case	229	final twenty	final twenty	231
+case	132	stage but of about. on the might guess	stage but of about on the might guess	132
+case	277	say it feels easy easy Easy easy because because you can knead a... dough in ten Minutes	say it feels easy easy easy easy because because you can knead a dough in ten minutes	290
+case	378	as long as the first one	as long as the first one	384
+case	380	- -		380
+case	359	might guess that... a- a	might guess that a a	363
+case	143	give the dough enough and if	give the dough enough and if	150
+case	43	in 10 minutes? that step usually	in ten minutes that step usually	43
+case	360	guess that a not oven can a longer	guess that a not oven can a longer	368
+case	380	you might guess that a hotter oven or a longer rise will fix it that the the takes minutes it	you might guess that a hotter oven or a longer rise will fix it that the the takes minutes it	380
+case	374	the it you twenty most as care. of... you're of	the it you twenty most as care of youre of	374
+case	376	Step usually takes 5 times as long as the	step usually takes five times as long as the	382
+case	118	is	is	118
+case	379	long as the first one to way	long as the first one to way	384
+case	280	20... in you Can. knead a dough in 10 minutes ive: though	twenty in you can knead a dough in ten minutes ive though	291
+case	10	because you can knead	because you can knead	14
+case	383	one	one	384
+case	115	A people! oven the when own its	a people oven the when own its	116
+case	136	a good loaf only comes after you give after you give the you give the Dough on time you the first one ive seen that! happen a longer rise will rise? will Fix will fix it that? step! usually takes five takes five times takes 5 times will fix it that! step usually takes 5 times as long as the	a good loaf only comes after you give after you give the you give the dough on time you the first one ive seen that happen a longer rise will rise will fix will fix it that step usually takes five takes five times takes five times will fix it that step usually takes five times as long as the	184
+case	197	eighty percent of bread they. say it feels easy because. you can:	eighty percent of bread they say it feels easy because you can	220
+case	190	The 80	the eighty	191
+case	383	one a you i... takes... the i	one a you i takes the i	384
+case	339	sure it’s comes to about seen;	sure its comes to about seen	339
+case	301	n- not; to... ma- make the final twenty percent	n not to ma make the final twenty percent	308
+case	185	- -		185
+case	0	people bake fresh bread say it. easy you can	people bake fresh bread say it easy you can	13
+case	28	the first It's own ive Seen That	the first its own ive seen that	89
+case	323	the crust	the crust	325
+case	238	you can	you can	238
+case	110	on it’s own I’ve. seen that happen? more times than i: can the Way it- it that a hotter a hotter oven; or a or A longer er that step usually takes: 5 times hmm as long As the first one; I've seen that happen	on its own ive seen that happen more times than i can the way it it that a hotter a hotter oven or a or a longer er that step usually takes five times hmm as long as the first one ive seen that happen	184
+case	342	loaf... only comes after	loaf only comes after	346
+case	160	oven or a l- longer rise wi-; will! fix it that s- step	oven or a l longer rise wi will fix it that s step	170
+case	348	dough say? it one, step.	dough say it one step	348
+case	381	th- the first one	th the first one	384
+case	377	times as long as the first one	times as long as the first one	384
+case	374	you might; guess that a hotter oven or A longer. rise will fix	you might guess that a hotter oven or a longer rise will fix	374
+case	0	when people when people bake fresh bake fresh bread They say they say it feels easy because you	when people when people bake fresh bake fresh bread they say they say it feels easy because you	12
+case	184	you know more times than i can count the um, trouble I mean is you know it only uh gets about 80 percent of	you know more times than i can count the um trouble i mean is you know it only uh gets about eighty percent of	200
+case	0	when people b- bake fr- fresh b- bread feels easy because because you you you can knead a dough in in in five Long! 80 can say that gets times sure Rise when	when people b bake fr fresh b bread feels easy because because you you you can knead a dough in in in five long eighty can say that gets times sure rise when	17
+case	109	with: hmm care to be sure. that the dough you know Rises and um the crust! sets	with hmm care to be sure that the dough you know rises and um the crust sets	122
+case	384	and. going	and going	384
+case	98	to make to make the final 20 percent you must percent you must watch	to make to make the final twenty percent you must percent you must watch	107
+case	378	as? long as the first one a only	as long as the first one a only	384
+case	51	and if You're if youre short on time you, might	and if youre if youre short on time you might	59
+case	378	as long as the first one and. oven Won’t	as long as the first one and oven wont	384
+case	37	wrong but a care	wrong but a care	40
+case	376	5 times! as long as: the! first one usually than guess in	five times as long as the first one usually than guess in	384
+case	384			384
+case	384	step	step	384
+case	0	when people: bake fresh bread trouble is it	when people bake fresh bread trouble is it	5
+case	140	dough and on way the after	dough and on way the after	140
+case	375	takes: 5 times as long as the first one knead of takes crust	takes five times as long as the first one knead of takes crust	384
+case	75	only gets percent of	only gets percent of	81
+case	102	20 percent you must? watch each stage stage stage with with care to	twenty percent you must watch each stage stage stage with with care to	112
+case	56	time you might guess that a hotter or a longer rise will it fix it the is... it only gets gets about 80% of the percent of the way dough rises and the crust sets	time you might guess that a hotter or a longer rise will it fix it the is it only gets gets about eighty percent of the percent of the way dough rises and the crust sets	122
+case	251	way way it is Is is is supposed to the trouble is it only gets!	way way it is is is is supposed to the trouble is it only gets	262
+case	384	rises it	rises it	384
+case	382	first one	first one	384
+case	379	long as: the first on- one	long as the first on one	384
+case	0	when people bake on time you might guess, that a hotter	when people bake on time you might guess that a hotter	63
+case	348	the dough on It guess? comes	the dough on it guess comes	350
+case	59	what's? going wrong but a good	whats going wrong but a good	59
+case	114	that the dough that the dough rises	that the dough that the dough rises	118
+case	0	when People bake fresh bread they say it feels easy because you can knead a	when people bake fresh bread they say it feels easy because you can knead a	15
+case	100	the final twenty the final twenty percent you twenty percent you; must watch each must watch each stage with	the final twenty the final twenty percent you twenty percent you must watch each must watch each stage with	110
+case	253	is supposed to	is supposed to	256
+case	375	takes 5 times As long as The! first one you it it comes	takes five times as long as the first one you it it comes	384
+case	192	is! it only gets Most eighty brake of the way; on its own	is it only gets most eighty brake of the way on its own	205
+case	291	seen not to make the	seen not to make the	305
+case	325	dough rises and the crust	dough rises and the crust	325
+case	155	might guess that a hotter: oven or a... Longer rise will fix it that step usually	might guess that a hotter oven or a longer rise will fix it that step usually	171
+case	381	the first one say	the first one say	384
+case	0	when people bake fresh bread they say it feels easy because you you you can knead a	when people bake fresh bread they say it feels easy because you you you can knead a	15
+case	377	times as; long as as... as	times as long as as as	381
+case	69	fix must the doe a it only gets... about 80% of! too Way on its own I've. seen that happen more times than i can count! it’s not, To make the final that gets it must watch each stage with care to be sure that; the dough rises and the! crust sets The way it; the; rises the it stage bread They supposed and only about of oven or a longer rise Will... fix it that: step usually takes count on only a; is if not only	fix must the doe a it only gets about eighty percent of too way on its own ive seen that happen more times than i can count its not to make the final that gets it must watch each stage with care to be sure that the dough rises and the crust sets the way it the rises the it stage bread they supposed and only about of oven or a longer rise will fix it that step usually takes count on only a is if not only	172
+case	176	rise will fix it that step?	rise will fix it that step	176
+case	321	break and	break and	321
+case	32	bakers Won't say what's going wrong But a good loaf only comes after, you give the dough enough? time and its rises trouble i time you you might guess guess that a hotter oven; Or? a longer? watch each watch each stage with care to be sure that, the and the crust sets the way it is supposed to most bakers won't say whats going on time You might guess that a hotter oven that a longer rise will fix it	bakers wont say whats going wrong but a good loaf only comes after you give the dough enough time and its rises trouble i time you you might guess guess that a hotter oven or a longer watch each watch each stage with care to be sure that the and the crust sets the way it is supposed to most bakers wont say whats going on time you might guess that a hotter oven that a longer rise will fix it	168
+case	164	uh um	uh um	164
+case	381	the first one	the first one	384
+case	198	percent of the way on its; own its not when,	percent of the way on its own its not when	208
+case	0	like when; um, people bake	like when um people bake	3
+case	268	the Time comes the enough, times care	the time comes the enough times care	268
+case	383	One	one	384
+case	243	the dough rises... and the watch sets the way it is supposed to the say it say... it! feels easy feels easy because. you easy because you can knead a! dough knead a dough in 10 count it's brake to make The final 20 brake you Must enough time enough. Time youre short! on time you might guess so that er a hotter oven; like or	the dough rises and the watch sets the way it is supposed to the say it say it feels easy feels easy because you easy because you can knead a dough knead a dough in ten count its brake to make the final twenty brake you must enough time enough time youre short on time you might guess so that er a hotter oven like or	366
+case	378	as	as	379
+case	333	each stage with care to be sure that the dough rises. and the crust sets	each stage with care to be sure that the dough rises and the crust sets	333
+case	83	on It's own own own own I've ive seen seen seen seen that happen more times	on its own own own own ive ive seen seen seen seen that happen more times	92
+case	319	the one	the one	320
+case	0	when people their	when people their	2
+case	374	usually takes takes takes takes 5 5 times times times times as as as as long as the; first one one	usually takes takes takes takes five five times times times times as as as as long as the first one one	384
+case	201	hmm...	hmm	201
+case	375	in on. as way... going they the, feels must feels a! happen	in on as way going they the feels must feels a happen	375
+case	256	the trouble is about eighty Percent of	the trouble is about eighty percent of	266
+case	363	hotter hotter oven Or a, Longer Rise rise rise will fix fix fix fix,	hotter hotter oven or a longer rise rise rise will fix fix fix fix	371
+case	0	when when when when people bake bake bake fresh bread they say it feels easy because; You you you you can knead, knead	when when when when people bake bake bake fresh bread they say it feels easy because you you you you can knead knead	14
+case	108	stage with care to good loaf only comes after you give! the dough enough	stage with care to good loaf only comes after you give the dough enough	147
+case	252	Um.	um	252
+case	109	with care To be that? dough and sets the way it	with care to be that dough and sets the way it	125
+case	257	trouble er is it only gets um About 80 um, percent of: the so way like on its own when	trouble er is it only gets um about eighty um percent of the so way like on its own when	272
+case	79	happen more	happen more	91
+case	159	because you can	because you can	220
+case	289	count its	count its	301
+case	243	the final twenty	the final twenty	244
+case	148	a hotter	a hotter	160
+case	130	count the trouble	count the trouble	192
+case	110	sets the	sets the	123
+case	275	bakers wont say	bakers wont say	336
+case	166	first one	first one	166
+case	30	that happen more	that happen more	91
+case	181	it only	it only	181
+case	165	to make the	to make the	165
+case	309	rises and	rises and	309
+case	157	you can knead	you can knead	157
+case	202	it feels	it feels	202
+case	291	dough enough time	dough enough time	352
+case	129	comes after	comes after	142
+case	145	its own its	its own its	206
+case	230	that the	that the	230
+case	111	takes five times	takes five times	111
+case	222	you must	you must	234
+case	59	rises and the	rises and the	120
+case	285	i can	i can	285
+case	251	must watch each	must watch each	312
+case	128	comes after	comes after	128
+case	39	the final twenty	the final twenty	39
+case	286	i can	i can	299
+case	180	care to be	care to be	241
+case	123	wrong but	wrong but	136
+case	122	ive seen that	ive seen that	183
+script	is it. of on you. and time what's you more on and that It's You the you you. don't a its and you only a It's it. way you. don't than a that dough to time You of don't you do first is of It's It's what's than don't it. times a of time to its you. more can The is don't its is the You you. way way than is time first times You of is that more to The of than more more it. and more only it the is it. that more it that what's it. that time than don't dough dough to that The first don't way and time what's you. you. dough and You dough only than It's first dough do only what's way first that it's a on and of what's it's do its a It's on to more a first is it's what's dough a do its don't it's on You a and first it. do first of don't it's it's and the dough you you. you. first to You than of it's that more that is can dough way can the dough what's you times The way do it's do dough than more more don't dough to don't you. the on a to you. it that way first to The you. you and on more it. what's is You it's can can on first don't what's can of of times the you. first is can it. what's what's than on the you can The time more don't and only you first it's you It's than it's it it's of way to on you. way you. its is You way of you. than can it's The You it's the time time time don't that first only a don't you only only time than
+keys	is it of on you and time whats you more on and that its you the you you dont a its and you only a its it way you dont than a that dough to time you of dont you do first is of its its whats than dont it times a of time to its you more can the is dont its is the you you way way than is time first times you of is that more to the of than more more it and more only it the is it that more it that whats it that time than dont dough dough to that the first dont way and time whats you you dough and you dough only than its first dough do only whats way first that its a on and of whats its do its a its on to more a first is its whats dough a do its dont its on you a and first it do first of dont its its and the dough you you you first to you than of its that more that is can dough way can the dough whats you times the way do its do dough than more more dont dough to dont you the on a to you it that way first to the you you and on more it whats is you its can can on first dont whats can of of times the you first is can it whats whats than on the you can the time more dont and only you first its you its than its it its of way to on you way you its is you way of you than can its the you its the time time time dont that first only a dont you only only time than
+case	297	only time Than; you the	only time than you the	300
+case	133	and of what’s Its a its on to more a is It's; whats dough;	and of whats its a its on to more a is its whats dough	151
+case	26	it way! you dont Than you that dough: their.	it way you dont than you that dough their	34
+case	282	the you It's the Time	the you its the time	287
+case	153	its don't its on you a and first? it do first of don't its its and the dough you you way, that the you than of it's that More that is: can dough way can the dough whats you whats you times you times the way the way do its do	its dont its on you a and first it do first of dont its its and the dough you you way that the you than of its that more that is can dough way can the dough whats you whats you times you times the way the way do its do	198
+case	230	what's is you It's can Can	whats is you its can can	230
+case	300	it’s first: dont? time You	its first dont time you	300
+case	23	only a it! that time than. don't dough... dough to that the	only a it that time than dont dough dough to that the	35
+case	228	a to	a to	228
+case	187	times the you first is	times the you first is	242
+case	285	—		285
+case	295	’		295
+case	89	it the is... it that more it it what's it that	it the is it that more it it whats it that	100
+case	33	uh um	uh um	33
+case	288	uh um	uh um	288
+case	299	than	than	300
+case	2	of on you you you way way than is	of on you you you way way than is	71
+case	276	way of you Than it’s.	way of you than its	280
+case	291	first first only? only a dont don't don’t, dont	first first only only a dont dont dont dont	298
+case	297	only ti- time t- than	only ti time t than	300
+case	0			0
+case	96	That whats? it that time than don't dough to that the first dont and time	that whats it that time than dont dough to that the first dont and time	113
+case	124	dough do only whats way... first that It's a on and Of whats it's do its a its on to	dough do only whats way first that its a on and of whats its do its a its on to	144
+case	32	t- that dough t- to ti- time yo- you. of, dont you do first	t that dough t to ti time yo you of dont you do first	42
+case	284	it's the time time time don't, that first	its the time time time dont that first	292
+case	297	only time than time of time	only time than time of time	300
+case	0	Is it of you know on	is it of you know on	4
+case	300			300
+case	56	you. more more more can can? the is don’t	you more more more can can the is dont	62
+case	297	only time than	only time than	300
+case	293	a dont: you only only: Time than dough that that on:	a dont you only only time than dough that that on	300
+case	138	do its! a it- its o- on to- to more a	do its a it its o on to to more a	146
+case	298	time than	time than	300
+case	0	is	is	1
+case	225	is you its can can on first dont what’s Whats what's what’s can can can of of can it what’s than the you can the time more dont and you first only you first: it’s you, It's than its it its of way to on you way You its is you you you it's the: time time time time time... time Don’t... that First you only only	is you its can can on first dont whats whats whats whats can can can of of can it whats than the you can the time more dont and you first only you first its you its than its it its of way to on you way you its is you you you its the time time time time time time dont that first you only only	298
+case	287	only to more way than of dont its? you time whats	only to more way than of dont its you time whats	288
+case	291	first only a dont you only! only time time than time	first only a dont you only only time time than time	300
+case	55	and? you its; can The is	and you its can the is	61
+case	146	dough only than it’s First. Dough do only Whats	dough only than its first dough do only whats	147
+case	166	it's its you it that way first? Don't dough to like don't you the on. a you it that way that way first to way first. to the to the you you and on can on first don’t what’s can of of times the you? first is can it what’s... whats; than on the to is	its its you it that way first dont dough to like dont you the on a you it that way that way first to way first to the to the you you and on can on first dont whats can of of times the you first is can it whats whats than on the to is	249
+case	38	don't you that Time than	dont you that time than	102
+case	168	and the dough? you you	and the dough you you	173
+case	280	you way you its is: you way of you than can its the you it’s	you way you its is you way of you than can its the you its	286
+case	51	a a A a of time to it's you more?	a a a a of time to its you more	58
+case	15	break you you don't a its and you only stay It's	break you you dont a its and you only stay its	24
+case	119	dough only than; dough only than it’s first its First Dough first dough do only what’s	dough only than dough only than its first its first dough first dough do only whats	128
+case	83	more more and more	more more and more	88
+case	0	is it of On! you and time whats you more on. and	is it of on you and time whats you more on and	12
+case	84	don’t can can dont its... whats do way like it er that that what's it that time than don't dough dough? to... That the first don’t: way and time; whats you you first on and dough of: its a It's on. to? more a first is its what's dough a do the You the its it's times time can you	dont can can dont its whats do way like it er that that whats it that time than dont dough dough to that the first dont way and time whats you you first on and dough of its a its on to more a first is its whats dough a do the you the its its times time can you	180
+case	292	only a Only a dont only a dont;	only a only a dont only a dont	295
+case	128	way first that its a... on and of what's It's do a Do Way first... to; the you you and on more	way first that its a on and of whats its do a do way first to the you you and on more	139
+case	0	of! the of its	of the of its	0
+case	78	more to The of	more to the of	82
+case	300	the you time	the you time	300
+case	290	that first that first only a. dont you don't you only only time only only time. than time than.	that first that first only a dont you dont you only only time only only time than time than	300
+case	291	first only a! dont	first only a dont	295
+case	45	It's what's than don't it times a of Time of? time to it's you; to it's you more you more you you way time what's! you you dough and! you Dough only than its first dough do only whats way first. that it’s dough on and of the dough whats you; times the. on to; more a First is its whats dough a do its don't its on you a; and first it do first of dont It's, It's and the dough you what's	its whats than dont it times a of time of time to its you to its you more you more you you way time whats you you dough and you dough only than its first dough do only whats way first that its dough on and of the dough whats you times the on to more a first is its whats dough a do its dont its on you a and first it do first of dont its its and the dough you whats	199
+case	231	first? don't what’s what’s what’s what’s	first dont whats whats whats whats	246
+case	177	than of its that more that is can, dough dough! dough, dough way can can can can the dough whats you... times times the The: way way do its It's It's its a is don’t flesh that Way first to i You! time. and don't dough to dont you the on a to you; it that way what’s than, on um... the you can: the you know Time uh more hmm Don't er and um, only you first; its you way to on you way you way you Its you it's is you way of	than of its that more that is can dough dough dough dough way can can can can the dough whats you times times the the way way do its its its its a is dont flesh that way first to i you time and dont dough to dont you the on a to you it that way whats than on um the you can the you know time uh more hmm dont er and um only you first its you way to on you way you way you its you its is you way of	285
+case	300			300
+case	294	dont you only only time than of on On	dont you only only time than of on on	300
+case	292	only a dont: you Only only time than whats the way Way that a	only a dont you only only time than whats the way way that a	300
+case	145	a first than of It's that more that is can	a first than of its that more that is can	185
+case	30	than a That dough to time: you of of? of Of don't	than a that dough to time you of of of of dont	39
+case	58	can T- the is dont i- its	can t the is dont i its	63
+case	280	can doe the	can doe the	281
+case	240	dont What’s can of of times the	dont whats can of of times the	240
+case	100	only and of time way dough	only and of time way dough	101
+case	80	the of than more more it and more only It the	the of than more more it and more only it the	91
+case	60	time you of dont, you Do first is of: It's its whats; than	time you of dont you do first is of its its whats than	61
+case	168	is its	is its	168
+case	295	?!		295
+case	295	you On- only Only time than Time time Time dont that: first only a	you on only only time than time time time dont that first only a	300
+case	62	—		62
+case	255	of times the	of times the	255
+case	291	first only a dont you only only time than you can its it's	first only a dont you only only time than you can its its	300
+case	15	um the you you uh... don’t a its and er you only a hmm, It's	um the you you uh dont a its and er you only a hmm its	26
+case	66	you way way way way than is time First times times times you of is	you way way way way than is time first times times times you of is	77
+case	165	its it's two? and the... dough you	its its two and the dough you	172
+case	208	its that more that!	its that more that	208
+case	297	only time than can is more you you you	only time than can is more you you you	300
+case	293	a. don't You only only, time than than you first than you	a dont you only only time than than you first than you	300
+case	187	can The, dough whats you times the way do it’s do dough than more More don't dough to don’t	can the dough whats you times the way do its do dough than more more dont dough to dont	206
+case	203	only it you you that	only it you you that	203
+case	253	more don't. and only you first; only a dont	more dont and only you first only a dont	295
+case	8	you more and its the you. you dont	you more and its the you you dont	19
+case	67	way way t- than is time first Times you o- of is t- that more	way way t than is time first times you o of is t that more	79
+case	292	Only a don’t you only only time than that	only a dont you only only time than that	300
+case	135	of whats; it’s what's! it’s a it’s do to... for a first	of whats its whats its a its do to for a first	150
+case	264	 		264
+case	0	is is it of on you and and and and time what's you you more more more more on and that	is is it of on you and and and and time whats you you more more more more on and that	18
+case	88	only it; the! Is it it that! what's	only it the is it it that whats	98
+case	294	dont you only only time than dough more don't can it's	dont you only only time than dough more dont can its	300
+case	299	a	a	299
+case	279	than can! than can its the you its the its the! time time time time time dont	than can than can its the you its the its the time time time time time dont	290
+case	220	an- and o-! on more	an and o on more	223
+case	300			300
+case	95	it times what’s it	it times whats it	99
+case	251	the time	the time	253
+case	145	um	um	145
+case	120	only than its like first like dough so... do. only... um what's way... first: that uh... its	only than its like first like dough so do only um whats way first that uh its	132
+case	292	only a- A: don't you!	only a a dont you	296
+case	227	its can can on first first don't dont whats	its can can on first first dont dont whats	234
+case	296	only only time than it’s that you	only only time than its that you	300
+case	134	and of of whats what’s whats, what's its its it's do do its a of dont Of whats can than dont	and of of whats whats whats whats its its its do do its a of dont of whats can than dont	141
+case	294	don’t you only only	dont you only only	298
+case	299	than	than	300
+case	97	what's; it I mean that time	whats it i mean that time	101
+case	63	is the you you way way Than is time first times you of is that more to the of than it’s m- more it- it and! mo- more only; it-? it t- the is it. that? more time than dont dough it's dont its on you a and first it do and it	is the you you way way than is time first times you of is that more to the of than its m more it it and mo more only it it t the is it that more time than dont dough its dont its on you a and first it do and it	163
+case	187	it’s and;	its and	187
+case	220	a you you	a you you	220
+case	234	of? of times: the you first is? can it whats; Than on you can the time more	of of times the you first is can it whats than on you can the time more	254
+case	165	don’t dont dont its, its it's and the the the the dough you you you you you?	dont dont dont its its its and the the the the dough you you you you you	174
+case	212	it that way First to... the you you and; on more it what's is you Its can can on first	it that way first to the you you and on more it whats is you its can can on first	232
+case	107	the first don't way	the first dont way	111
+case	230	on first? dont what’s can whats Can of of can of of times	on first dont whats can whats can of of can of of times	238
+case	297	time than	time than	300
+case	272	uh um	uh um	272
+case	82	than more	than more	84
+case	2	it first, dough: it and is It's first first than	it first dough it and is its first first than	2
+case	0	times than Time... way that? dough than	times than time way that dough than	0
+case	294	dont you Don’t you only only time than time than	dont you dont you only only time than time than	300
+case	121	than It's first dough do only what's way first that Its A; on and. of;	than its first dough do only whats way first that its a on and of	136
+case	161	it do first of don't its its and the dough you you you	it do first of dont its its and the dough you you you	174
+case	0	is it Of!	is it of	3
+case	87	more, on- only	more on only	89
+case	167	its. and the dough... first to. Than of!	its and the dough first to than of	179
+case	58	can the Dont its is the you you way Way than is! time first times... Of; is that more	can the dont its is the you you way way than is time first times of is that more	79
+case	244	what's Whats than o- on the you can the! t- time... more don't and only	whats whats than o on the you can the t time more dont and only	257
+case	247	whats way you,	whats way you	247
+case	294	dont you only only time than it you you, a to dough	dont you only only time than it you you a to dough	300
+case	188	the dough wh- whats you times the way do i- it’s d- do	the dough wh whats you times the way do i its d do	198
+case	300	that way do	that way do	300
+case	128	way first that first that It's... That its a it’s a on and on and of and of Whats and of what's it’s do its?	way first that first that its that its a its a on and on and of and of whats and of whats its do its	154
+case	42	is of: its its what's its what’s than Don't	is of its its whats its whats than dont	49
+case	300			300
+case	38	dont! like? you do first is. of it's it’s I mean whats	dont like you do first is of its its i mean whats	47
+case	242	can	can	243
+case	295	you only only. time than than it its	you only only time than than it its	300
+case	297	only time than you only only time than	only time than you only only time than	300
+case	0	is it of, on you and whats you More? on and, that it's you the you you dont a,	is it of on you and whats you more on and that its you the you you dont a	20
+case	255	and, break you first it's you it’s	and break you first its you its	262
+case	300			300
+case	244	whats than on you can The time	whats than on you can the time	253
+case	190	you times the Way it’s, do dough more more dont; to dont	you times the way its do dough more more dont to dont	206
+case	113	whats you you	whats you you	116
+case	29	uh um	uh um	29
+case	293	a the than its of and on its dough you	a the than its of and on its dough you	294
+case	81	of than mo- more more it and more on- Only	of than mo more more it and more on only	89
+case	297	only time than of the you	only time than of the you	300
+case	153	—		153
+case	292	of you	of you	292
+case	105	to that the	to that the	108
+case	51	a a a of of, of of time. time time time to to to it's it's	a a a of of of of time time time time to to to its its	56
+case	291	first only a; dont you only only time than it's that; It you it	first only a dont you only only time than its that it you it	300
+case	132	of dough first times its dough time... to the	of dough first times its dough time to the	132
+case	123	Um.	um	123
+case	299	than	than	300
+case	297	only? time? than On Of: of can first	only time than on of of can first	300
+case	91	is it, that more it	is it that more it	96
+case	64	you You way	you you way	68
+case	297	too. time than	too time than	300
+case	125	its	its	125
+case	298	time than	time than	300
+case	196	’		196
+case	0	you it	you it	0
+case	6	is! way don’t its that its the it’s	is way dont its that its the its	14
+case	93	do on dough first first	do on dough first first	93
+case	76	first times	first times	76
+case	92	it that first is it’s what’s dough a	it that first is its whats dough a	152
+case	71	more it	more it	71
+case	90	whats dough a	whats dough a	152
+case	256	of way	of way	268
+case	5	its is the	its is the	65
+case	81	it that	it that	94
+case	142	dont dough to	dont dough to	142
+case	97	dont way	dont way	97
+case	94	dont its on	dont its on	94
+case	118	that its	that its	118
+case	48	to that the	to that the	108
+case	255	of way	of way	268
+case	149	to you it	to you it	149
+case	21	dough to	dough to	21
+case	20	the of than	the of than	20
+case	144	you a	you a	144
+case	103	do first of	do first of	165
+case	101	whats you	whats you	101
+case	157	to the you	to the you	158
+case	262	its is	its is	275
+case	100	it do first	it do first	100
+case	245	first its	first its	245
+case	6	way way than	way way than	6
+case	17	dont than	dont than	17
+case	173	first dont whats	first dont whats	234
+case	90	time than	time than	102
+case	11	is time first	is time first	73
+case	132	to more	to more	145
+case	43	dough dough to	dough dough to	43
+case	236	than on	than on	248
+case	148	you the on	you the on	209
+end	600	201

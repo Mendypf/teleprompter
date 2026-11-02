@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Only one kind of event: which app just came to the front. That is how the band knows the Pixel Camera is open.
+    It never reads what is on screen (canRetrieveWindowContent is false).
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeWindowStateChanged"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:canRetrieveWindowContent="false"
+    android:description="@string/service_description"
+    android:isAccessibilityTool="false"
+    android:notificationTimeout="0"
+    android:settingsActivity="io.github.mendypf.prompter.MainActivity"
+    android:summary="@string/service_summary" />

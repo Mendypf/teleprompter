@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prompter</string>
+    <string name="service_summary">Shows your script over the Pixel Camera and follows your voice</string>
+    <string name="service_description">When the Pixel Camera is open, a band at the top shows your script. Tap Start and it listens through the mic and moves along as you read. It only checks which app is open. No sound is saved, your script stays on this phone, and the app has no internet access.</string>
+</resources>
