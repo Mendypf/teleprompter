@@ -1,8 +1,25 @@
+import java.util.Properties
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     alias(libs.plugins.android.application)
 }
+
+// The release key lives outside the repo: in ~/.prompter, or wherever -Pprompter.keystore or PROMPTER_KEYSTORE
+// points, with its passwords in a keystore.properties file next to it. Without it (a fresh clone, a pull request)
+// the release build is signed with the debug key so it still installs.
+val keystoreFile = providers.gradleProperty("prompter.keystore")
+    .orElse(providers.environmentVariable("PROMPTER_KEYSTORE"))
+    .orElse(providers.systemProperty("user.home").map { "$it/.prompter/prompter-release.jks" })
+    .map { file(it) }
+    .orNull
+    ?.takeIf { it.isFile }
+val keystoreProps = Properties().apply {
+    keystoreFile?.resolveSibling("keystore.properties")?.takeIf { it.isFile }?.inputStream()?.use(::load)
+}
+
+fun secret(name: String): String? =
+    keystoreProps.getProperty(name) ?: providers.environmentVariable("PROMPTER_${name.uppercase()}").orNull
 
 android {
     namespace = "io.github.mendypf.prompter"
@@ -17,6 +34,25 @@ android {
         targetSdk = 37
         versionCode = 2
         versionName = "0.2.0"
+    }
+
+    signingConfigs {
+        if (keystoreFile != null) {
+            create("release") {
+                storeFile = keystoreFile
+                storePassword = secret("storePassword")
+                keyAlias = secret("keyAlias")
+                keyPassword = secret("keyPassword")
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            // No shrinking: the release runs the same code as the debug build that was tested on a Pixel.
+            isMinifyEnabled = false
+            signingConfig = signingConfigs.findByName("release") ?: signingConfigs.getByName("debug")
+        }
     }
 
     compileOptions {

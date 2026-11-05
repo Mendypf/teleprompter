@@ -6,6 +6,10 @@ The app (it shows up on the phone as Prompter) puts a small band with your scrip
 
 The band starts at the top of the screen, near the front camera lens, so your eyes stay close to it. Words you have said turn dim and the next word is the brightest. Swipe the words to go back or ahead, drag the handle under them or either side of the band to move it, and pinch it side to side or up and down to change its width or height. The text size is set in the app and never changes the band's size, so bigger words show fewer lines and smaller words show more. It comes in three looks: Dark glow, Glass and Clear glass.
 
+## Download
+
+On your Pixel, open the [latest release](https://github.com/Mendypf/teleprompter/releases/latest) and download `teleprompter.apk`. Open the file to install it. The first time, Android asks you to allow installs from your browser. Then follow the Setup steps below.
+
 ## Why it is an Accessibility app
 
 Android only lets an accessibility app share the mic with a camera that is recording. A normal app loses the mic the moment the camera starts a video.
@@ -21,15 +25,15 @@ The app uses the Accessibility service to see which app is in front, so the band
 - The band does not show on the lock screen.
 - A small log file in the app's private storage records events and counts, for example "at word 12 of 80". It never holds your script or your words.
 - A few test broadcasts for adb live in `AdbReceiver`. One of them can start listening from a computer. They require the `DUMP` permission, which only adb and the system hold, so other apps cannot send them.
-- The debug build below is debuggable, so a computer with adb access to the phone can read the app's files. Build a release with your own signing key if that matters to you.
+- The app file on the Releases page is a release build, so a computer cannot read the app's files over adb. A debug build you make yourself is debuggable and can be read that way.
 
 ## Requirements
 
-- Android 13 or newer.
+- A Pixel phone with Android 13 or newer. The band shows over the Pixel Camera app only.
 - On-device speech recognition with English installed. Pixel phones have it.
-- To build: JDK 17 or newer, and the Android SDK with platform 37.
+- To build it yourself: JDK 17 or newer, and the Android SDK with platform 37.
 
-## Build and install
+## Build it yourself
 
 ```
 git clone https://github.com/Mendypf/teleprompter
