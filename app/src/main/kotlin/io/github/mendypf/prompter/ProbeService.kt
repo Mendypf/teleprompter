@@ -8,6 +8,7 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.view.accessibility.AccessibilityEvent
 import io.github.mendypf.prompter.core.Follower
+import io.github.mendypf.prompter.core.FrontWindow
 import io.github.mendypf.prompter.core.Script
 
 /**
@@ -204,7 +205,13 @@ class ProbeService : AccessibilityService() {
     override fun onAccessibilityEvent(event: AccessibilityEvent) {
         if (event.eventType != AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) return
         val pkg = event.packageName?.toString() ?: return
-        if (pkg !in CAMERAS && pkg !in PASS_THROUGH) offNoted = false
+        // While the band is up, every window from another app goes in the log by app and window name (never its
+        // contents), so a band that vanishes can be traced to the window that sent it away.
+        if (cameraInFront && pkg !in CAMERAS) Probe.log("window: $pkg / ${event.className}")
+        // The keyboard, a popup, or the Pixel brightening the screen when recording starts: it floats over the camera,
+        // so the camera is still in front.
+        val floating = pkg !in CAMERAS && !FrontWindow.isAppScreen(event.className?.toString())
+        if (pkg !in CAMERAS && pkg !in PASS_THROUGH && !floating) offNoted = false
         when {
             pkg in CAMERAS -> if (!cameraInFront) {
                 // Switched off in the app: the camera opens on its own, with no band and so no mic.
@@ -223,6 +230,7 @@ class ProbeService : AccessibilityService() {
             }
             pkg == packageName && event.className?.toString() != MainActivity::class.java.name -> Unit
             pkg in PASS_THROUGH -> Unit
+            floating -> Unit
             cameraInFront -> {
                 cameraInFront = false
                 Probe.log("camera left")

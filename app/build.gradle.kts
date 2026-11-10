@@ -32,8 +32,8 @@ android {
         // 33 = Android 13: the first version that lets an app hand its own sound to the built-in speech AI.
         minSdk = 33
         targetSdk = 37
-        versionCode = 2
-        versionName = "0.2.0"
+        versionCode = 3
+        versionName = "0.2.1"
     }
 
     signingConfigs {
